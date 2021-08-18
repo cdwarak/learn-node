@@ -5,4 +5,7 @@ git config --global alias.co checkout
 git init
 
 
-get add .
+git add .
+git commit -am 'description'
+
+git push

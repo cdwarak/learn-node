@@ -1,2 +1,15 @@
-<h1>Hi, My Name is Dwarakanath Cheyyur</h1>
-<p>{{{stuff}}}</p>
+<div class="card">
+  <div class="card-header">
+    <h1>{{stock.companyName}} ({{stock.symbol}})</h1>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Stock Details</h5>
+    <p class="card-text">
+        <strong>Latest Price : </strong>${{stock.latestPrice}}</br>
+        <strong>Previous Close : </strong>${{stock.previousClose}}</br>
+        <strong>Market Cap : </strong>${{stock.marketCap}}</br>
+        <strong>Change Percent : </strong>{{stock.changePercent}}%</br>
+        <strong>Year To Date Change : </strong>{{stock.ytdChange}}%</br>
+    </p>
+  </div>
+</div>
